@@ -16,7 +16,7 @@ namespace MOONG
 		class Path
 		{
 		public:
-			std::string GetDirectory_ProgramFiles();
+			std::string GetDirectory_ProgramFiles() const;
 		};
 	}
 }
