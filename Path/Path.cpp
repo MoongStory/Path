@@ -3,11 +3,13 @@
 #include <shlobj_core.h>
 #pragma comment(lib, "Shell32.lib")
 
-std::string MOONG::PATH::Path::GetDirectory_ProgramFiles() const
+const CStringA MOONG::PATH::Path::GetDirectory_ProgramFiles() const
 {
-	char directory_programfiles[MAX_PATH] = { 0 };
+	char buffer[MAX_PATH] = { 0 };
 
-	SHGetSpecialFolderPathA(0, directory_programfiles, CSIDL_PROGRAM_FILES, FALSE);
+	SHGetSpecialFolderPathA(0, buffer, CSIDL_PROGRAM_FILES, FALSE);
+
+	CStringA directory_programfiles = buffer;
 
 	return directory_programfiles;
 }

@@ -1,5 +1,7 @@
 #include "Path.h"
 
+#include <iostream>
+
 int main()
 {
 	MOONG::PATH::Path path;
