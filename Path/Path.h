@@ -7,7 +7,7 @@
 #ifndef _PATH_H_
 #define _PATH_H_
 
-#include <atlstr.h>
+#include <iostream>
 
 namespace MOONG
 {
@@ -16,7 +16,7 @@ namespace MOONG
 		class Path
 		{
 		public:
-			const CStringA GetDirectory_ProgramFiles() const;
+			const std::string GetDirectory_ProgramFiles() const;
 		};
 	}
 }
