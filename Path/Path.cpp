@@ -1,6 +1,6 @@
 #include "Path.h"
 
-#include <shlobj_core.h>
+#include <shlobj.h>
 #pragma comment(lib, "Shell32.lib")
 
 const std::string MOONG::PATH::Path::GetDirectory_ProgramFiles() const
