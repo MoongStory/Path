@@ -4,7 +4,7 @@
 
 int main()
 {
-	std::cout << MOONG::PATH::Path::GetDirectory_ProgramFiles() << std::endl;
+	std::cout << MOONG::Path::GetDirectory_ProgramFiles().c_str() << std::endl;
 
 	return EXIT_SUCCESS;
 }

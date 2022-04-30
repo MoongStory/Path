@@ -3,7 +3,7 @@
 #include <shlobj.h>
 #pragma comment(lib, "Shell32.lib")
 
-const std::string MOONG::PATH::Path::GetDirectory_ProgramFiles()
+const std::string MOONG::Path::GetDirectory_ProgramFiles()
 {
 	char buffer[MAX_PATH] = { 0 };
 
