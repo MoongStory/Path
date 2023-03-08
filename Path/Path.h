@@ -38,7 +38,8 @@ namespace MOONG
 	class Path
 	{
 	public:
-		static const std::string GetDirectory_ProgramFiles();
+		static const std::string get_directory_programfiles();
+		static const std::string get_directory_desktop();
 	};
 }
 
